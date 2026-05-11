@@ -1,0 +1,40 @@
+hardware,layer,description,M,K,N,dataflow,latency_us,TFLOPS
+Tesla T4,M1_Q_proj,Query projection,4096,4096,4096,WS,35140.9847,3.9111
+Tesla T4,M1_Q_proj,Query projection,4096,4096,4096,IS,42217.9677,3.2555
+Tesla T4,M1_Q_proj,Query projection,4096,4096,4096,OS,121948.1985,1.127
+Tesla T4,M2_K_proj,Key projection,4096,4096,4096,WS,37155.4989,3.699
+Tesla T4,M2_K_proj,Key projection,4096,4096,4096,IS,45023.2521,3.0526
+Tesla T4,M2_K_proj,Key projection,4096,4096,4096,OS,122026.9435,1.1263
+Tesla T4,M3_V_proj,Value projection,4096,4096,4096,WS,39053.5741,3.5192
+Tesla T4,M3_V_proj,Value projection,4096,4096,4096,IS,46653.2787,2.946
+Tesla T4,M3_V_proj,Value projection,4096,4096,4096,OS,123036.495,1.1171
+Tesla T4,M4_Out_proj,Attention output projection,4096,4096,4096,WS,40445.7421,3.3981
+Tesla T4,M4_Out_proj,Attention output projection,4096,4096,4096,IS,49962.8348,2.7508
+Tesla T4,M4_Out_proj,Attention output projection,4096,4096,4096,OS,126010.81,1.0907
+Tesla T4,M5_FFN_gate,FFN gate projection (SwiGLU),4096,11008,4096,WS,120984.906,3.053
+Tesla T4,M5_FFN_gate,FFN gate projection (SwiGLU),4096,11008,4096,IS,148504.3713,2.4872
+Tesla T4,M5_FFN_gate,FFN gate projection (SwiGLU),4096,11008,4096,OS,322238.6365,1.1463
+Tesla T4,M6_FFN_up,FFN up projection (SwiGLU),4096,11008,4096,WS,116931.6521,3.1588
+Tesla T4,M6_FFN_up,FFN up projection (SwiGLU),4096,11008,4096,IS,141525.4023,2.6099
+Tesla T4,M6_FFN_up,FFN up projection (SwiGLU),4096,11008,4096,OS,323411.5825,1.1421
+Tesla T4,M7_FFN_down,FFN down projection,4096,4096,11008,WS,117315.4998,3.1485
+Tesla T4,M7_FFN_down,FFN down projection,4096,4096,11008,IS,139877.6259,2.6406
+Tesla T4,M7_FFN_down,FFN down projection,4096,4096,11008,OS,336146.7755,1.0988
+Tesla T4,M8_AttnScore_512,"Q x K^T, seq_len=512",512,128,512,WS,48.454,1.385
+Tesla T4,M8_AttnScore_512,"Q x K^T, seq_len=512",512,128,512,IS,47.1749,1.4226
+Tesla T4,M8_AttnScore_512,"Q x K^T, seq_len=512",512,128,512,OS,72.4377,0.9264
+Tesla T4,M9_AttnScore_1024,"Q x K^T, seq_len=1024",1024,128,1024,WS,78.0244,3.4404
+Tesla T4,M9_AttnScore_1024,"Q x K^T, seq_len=1024",1024,128,1024,IS,80.7039,3.3262
+Tesla T4,M9_AttnScore_1024,"Q x K^T, seq_len=1024",1024,128,1024,OS,301.7847,0.8895
+Tesla T4,M10_AttnScore_2048,"Q x K^T, seq_len=2048",2048,128,2048,WS,304.9383,3.5212
+Tesla T4,M10_AttnScore_2048,"Q x K^T, seq_len=2048",2048,128,2048,IS,373.4153,2.8755
+Tesla T4,M10_AttnScore_2048,"Q x K^T, seq_len=2048",2048,128,2048,OS,1221.2609,0.8792
+Tesla T4,M11_AttnOut_512,"scores x V, seq_len=512",512,512,128,WS,69.1077,0.9711
+Tesla T4,M11_AttnOut_512,"scores x V, seq_len=512",512,512,128,IS,68.5074,0.9796
+Tesla T4,M11_AttnOut_512,"scores x V, seq_len=512",512,512,128,OS,276.1201,0.243
+Tesla T4,M12_AttnOut_1024,"scores x V, seq_len=1024",1024,1024,128,WS,130.302,2.0601
+Tesla T4,M12_AttnOut_1024,"scores x V, seq_len=1024",1024,1024,128,IS,133.9547,2.0039
+Tesla T4,M12_AttnOut_1024,"scores x V, seq_len=1024",1024,1024,128,OS,515.829,0.5204
+Tesla T4,M13_AttnOut_2048,"scores x V, seq_len=2048",2048,2048,128,WS,269.5287,3.9838
+Tesla T4,M13_AttnOut_2048,"scores x V, seq_len=2048",2048,2048,128,IS,392.68,2.7344
+Tesla T4,M13_AttnOut_2048,"scores x V, seq_len=2048",2048,2048,128,OS,1132.9814,0.9477

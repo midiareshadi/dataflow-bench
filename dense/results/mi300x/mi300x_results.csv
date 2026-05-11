@@ -1,0 +1,40 @@
+hardware,layer,description,M,K,N,dataflow,latency_us,TFLOPS
+,M1_Q_proj,Query projection,4096,4096,4096,WS,1091.0071,125.9744
+,M1_Q_proj,Query projection,4096,4096,4096,IS,953.3141,144.1696
+,M1_Q_proj,Query projection,4096,4096,4096,OS,1214.4734,113.1675
+,M2_K_proj,Key projection,4096,4096,4096,WS,1100.3901,124.9002
+,M2_K_proj,Key projection,4096,4096,4096,IS,971.4641,141.4761
+,M2_K_proj,Key projection,4096,4096,4096,OS,1216.3252,112.9952
+,M3_V_proj,Value projection,4096,4096,4096,WS,1100.7933,124.8545
+,M3_V_proj,Value projection,4096,4096,4096,IS,973.4898,141.1817
+,M3_V_proj,Value projection,4096,4096,4096,OS,1218.2395,112.8177
+,M4_Out_proj,Attention output projection,4096,4096,4096,WS,1098.1953,125.1498
+,M4_Out_proj,Attention output projection,4096,4096,4096,IS,978.3774,140.4764
+,M4_Out_proj,Attention output projection,4096,4096,4096,OS,1220.7342,112.5871
+,M5_FFN_gate,FFN gate projection (SwiGLU),4096,11008,4096,WS,3238.9971,114.0375
+,M5_FFN_gate,FFN gate projection (SwiGLU),4096,11008,4096,IS,3011.8034,122.6399
+,M5_FFN_gate,FFN gate projection (SwiGLU),4096,11008,4096,OS,3644.7371,101.3426
+,M6_FFN_up,FFN up projection (SwiGLU),4096,11008,4096,WS,3242.1424,113.9269
+,M6_FFN_up,FFN up projection (SwiGLU),4096,11008,4096,IS,3007.5898,122.8117
+,M6_FFN_up,FFN up projection (SwiGLU),4096,11008,4096,OS,3643.0474,101.3896
+,M7_FFN_down,FFN down projection,4096,4096,11008,WS,3311.6381,111.5361
+,M7_FFN_down,FFN down projection,4096,4096,11008,IS,2765.4482,133.565
+,M7_FFN_down,FFN down projection,4096,4096,11008,OS,3520.0818,104.9314
+,M8_AttnScore_512,"Q x K^T, seq_len=512",512,128,512,WS,24.5507,2.7335
+,M8_AttnScore_512,"Q x K^T, seq_len=512",512,128,512,IS,24.3924,2.7512
+,M8_AttnScore_512,"Q x K^T, seq_len=512",512,128,512,OS,24.4446,2.7453
+,M9_AttnScore_1024,"Q x K^T, seq_len=1024",1024,128,1024,WS,24.1038,11.1367
+,M9_AttnScore_1024,"Q x K^T, seq_len=1024",1024,128,1024,IS,24.1022,11.1374
+,M9_AttnScore_1024,"Q x K^T, seq_len=1024",1024,128,1024,OS,24.5958,10.9139
+,M10_AttnScore_2048,"Q x K^T, seq_len=2048",2048,128,2048,WS,24.8211,43.2593
+,M10_AttnScore_2048,"Q x K^T, seq_len=2048",2048,128,2048,IS,24.156,44.4503
+,M10_AttnScore_2048,"Q x K^T, seq_len=2048",2048,128,2048,OS,24.6523,43.5554
+,M11_AttnOut_512,"scores x V, seq_len=512",512,512,128,WS,25.2339,2.6595
+,M11_AttnOut_512,"scores x V, seq_len=512",512,512,128,IS,24.0216,2.7937
+,M11_AttnOut_512,"scores x V, seq_len=512",512,512,128,OS,33.6434,1.9947
+,M12_AttnOut_1024,"scores x V, seq_len=1024",1024,1024,128,WS,45.0242,5.962
+,M12_AttnOut_1024,"scores x V, seq_len=1024",1024,1024,128,IS,37.8907,7.0845
+,M12_AttnOut_1024,"scores x V, seq_len=1024",1024,1024,128,OS,60.2479,4.4555
+,M13_AttnOut_2048,"scores x V, seq_len=2048",2048,2048,128,WS,85.2707,12.5921
+,M13_AttnOut_2048,"scores x V, seq_len=2048",2048,2048,128,IS,70.0163,15.3356
+,M13_AttnOut_2048,"scores x V, seq_len=2048",2048,2048,128,OS,114.0797,9.4122

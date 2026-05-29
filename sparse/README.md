@@ -17,7 +17,7 @@ Comparing **Inner-Product**, **Outer-Product**, and **Gustavson's** SpMSpM algor
    70% sparsity: 73x mean speedup. 95% sparsity: 15x mean speedup.
 
 4. **Inner-product ≈ Gustavson on GPU.**
-   Unlike the GAMMA paper (CPU) where Gustavson wins, GPU hardware makes them equivalent.
+   Unlike the GAMMA paper where Gustavson wins, GPU hardware makes them equivalent.
    Mean ratio inner/gustavson: 1.03 on T4, 0.99 on MI300x.
 
 5. **MI300x benefits outer-product most (4.4x over T4).**
